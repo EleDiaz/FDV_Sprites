@@ -40,7 +40,7 @@ public class Player : MonoBehaviour
         Vector2 smoothedCameraPosition = 
             Vector2.Lerp(camPos, playerPos, 
                 0.0525f
-                //Mathf.Clamp(Vector2.Distance(camPos, playerPos) - cameraMaxSeekDistance, 0, 1)
+                //Mathf.Clamp(Vector2.Distance(camPos, playerPos) / cameraMaxSeekDistance, 0, 1)
             );
 
         cam.transform.position = 
