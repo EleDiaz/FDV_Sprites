@@ -6,6 +6,7 @@ el cual contiene el conjunto de animaciones de cada personaje.
 ![](record.gif)
 
 Se añadido para la siguiente etapa de la práctica un parallax de fondo junto con el Tilemap sencillo con físicas en los muros y un jumper.
+
 ![](record2.gif)
 
 
