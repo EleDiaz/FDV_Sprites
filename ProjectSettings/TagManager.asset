@@ -38,9 +38,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Default
-    uniqueID: 0
+  - name: Parallax
+    uniqueID: 502357717
     locked: 0
   - name: Cat
     uniqueID: 3165167839
+    locked: 0
+  - name: Default
+    uniqueID: 0
     locked: 0
