@@ -28,7 +28,10 @@ public class PlayerPhysics : MonoBehaviour
     void FixedUpdate() {
         float vertical = Input.GetAxis("Vertical");
         float horizontal = Input.GetAxis("Horizontal");
-        rb.AddForce(new Vector3(horizontal, vertical, 0.0f).normalized * movementSpeed, ForceMode2D.Force);
+        if (rb.velocity.magnitude <= 0.5f) {
+            rb.MovePosition(transform.position + new Vector3(horizontal, vertical, 0.0f).normalized * movementSpeed * Time.fixedDeltaTime);
+        }
+        // rb.AddForce(new Vector3(horizontal, vertical, 0.0f).normalized * movementSpeed, ForceMode2D.Force);
     }
 
     void Update()

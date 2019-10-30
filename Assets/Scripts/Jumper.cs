@@ -8,6 +8,7 @@ public class Jumper : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collider2D) {
         Rigidbody2D rb = collider2D.GetComponent<Rigidbody2D>();
+        Debug.Log("Collision with the jumper");
         if (rb != null) {
             rb.AddForce(jumpForce * -transform.up, ForceMode2D.Impulse);
         }
