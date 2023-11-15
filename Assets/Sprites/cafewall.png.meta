@@ -147,7 +147,7 @@ TextureImporter:
       213: -955638891166847652
     second: cafewall_47
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -164,9 +164,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -175,9 +178,9 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
-    aniso: -1
-    mipBias: -100
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -198,9 +201,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -212,6 +221,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -224,6 +234,33 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -1247,9 +1284,57 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      cafewall_0: 313562736979184701
+      cafewall_1: -240180826098163511
+      cafewall_10: -4175034412682871428
+      cafewall_11: -8003799625465845347
+      cafewall_12: -4556402599999338855
+      cafewall_13: 108903216310333298
+      cafewall_14: -3439201599258936094
+      cafewall_15: -2130584931632303370
+      cafewall_16: -3564152880740302954
+      cafewall_17: -8805284465524139207
+      cafewall_18: 4246326224799154298
+      cafewall_19: 7446011559682554188
+      cafewall_2: -7509814665811441185
+      cafewall_20: 9212452167642268178
+      cafewall_21: 3055400954516889916
+      cafewall_22: -1644949723919231367
+      cafewall_23: 3985032991145424729
+      cafewall_24: 4907759913693710679
+      cafewall_25: -2651463747060315451
+      cafewall_26: -7018521272843748213
+      cafewall_27: 7844273696790907489
+      cafewall_28: -7320342750669522053
+      cafewall_29: -5855624855383669674
+      cafewall_3: 5115405635730013036
+      cafewall_30: -8151662901318698446
+      cafewall_31: 1859900043615861672
+      cafewall_32: 3121309155881525464
+      cafewall_33: 1227724229988710174
+      cafewall_34: 1257642791000728493
+      cafewall_35: 4425812989257379078
+      cafewall_36: -5379736662487656423
+      cafewall_37: -6298947249814211742
+      cafewall_38: -1928929950383507157
+      cafewall_39: -1276543374291745046
+      cafewall_4: 525565462955489282
+      cafewall_40: 6455431263205020309
+      cafewall_41: -5987051575175895064
+      cafewall_42: 5655996634038103244
+      cafewall_43: 2931688824336267084
+      cafewall_44: 8558522174457777858
+      cafewall_45: -4047405250993642110
+      cafewall_46: 4287162543915970032
+      cafewall_47: -955638891166847652
+      cafewall_5: 1454518058035569790
+      cafewall_6: -3238473530994582567
+      cafewall_7: -150659549072659265
+      cafewall_8: 4807377727625228234
+      cafewall_9: 1994156295147239636
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

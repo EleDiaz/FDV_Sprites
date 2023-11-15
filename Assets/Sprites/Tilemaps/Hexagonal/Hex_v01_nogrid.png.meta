@@ -327,7 +327,7 @@ TextureImporter:
       213: 2633884402613633786
     second: Hex_v01_nogrid_107
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -344,9 +344,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -355,9 +358,9 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
-    aniso: -1
-    mipBias: -100
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -378,9 +381,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -392,6 +401,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -404,6 +414,33 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -2687,9 +2724,117 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      Hex_v01_nogrid_0: 9184798946940966086
+      Hex_v01_nogrid_1: 6336221465238325007
+      Hex_v01_nogrid_10: -7162426788967281468
+      Hex_v01_nogrid_100: -8124965848141526247
+      Hex_v01_nogrid_101: 6779156590591264055
+      Hex_v01_nogrid_102: -7699780220219712647
+      Hex_v01_nogrid_103: -177123065680103107
+      Hex_v01_nogrid_104: 3635233161125471802
+      Hex_v01_nogrid_105: -5040534699930992992
+      Hex_v01_nogrid_106: 7372666049644926627
+      Hex_v01_nogrid_107: 2633884402613633786
+      Hex_v01_nogrid_11: -4839565670552779902
+      Hex_v01_nogrid_12: 1287803709406807351
+      Hex_v01_nogrid_13: -1518040067922835371
+      Hex_v01_nogrid_14: 6876587580077264035
+      Hex_v01_nogrid_15: -9196891967080578622
+      Hex_v01_nogrid_16: -2614878984911507861
+      Hex_v01_nogrid_17: -5557208043144714035
+      Hex_v01_nogrid_18: 8269643253552985944
+      Hex_v01_nogrid_19: -1350764421643387025
+      Hex_v01_nogrid_2: 4456433797265275176
+      Hex_v01_nogrid_20: -4960520143909561544
+      Hex_v01_nogrid_21: 38880102275479296
+      Hex_v01_nogrid_22: 1567591668994969695
+      Hex_v01_nogrid_23: 898034670309945010
+      Hex_v01_nogrid_24: -8509205049496993587
+      Hex_v01_nogrid_25: 5497380873158028151
+      Hex_v01_nogrid_26: 1720999244828409939
+      Hex_v01_nogrid_27: -4983717463224753478
+      Hex_v01_nogrid_28: 846349439245918887
+      Hex_v01_nogrid_29: 5023014827725032099
+      Hex_v01_nogrid_3: 776319046153404177
+      Hex_v01_nogrid_30: -6417490081198921584
+      Hex_v01_nogrid_31: 151945378463905935
+      Hex_v01_nogrid_32: 510125967456823450
+      Hex_v01_nogrid_33: -6720629757410867429
+      Hex_v01_nogrid_34: 5602534772243552669
+      Hex_v01_nogrid_35: -6736870044185911007
+      Hex_v01_nogrid_36: -4559932651381958156
+      Hex_v01_nogrid_37: 1212095337405512942
+      Hex_v01_nogrid_38: -6626282835914610653
+      Hex_v01_nogrid_39: -7799918962950376486
+      Hex_v01_nogrid_4: -2357440240736400118
+      Hex_v01_nogrid_40: -201229205872321217
+      Hex_v01_nogrid_41: 4037346645790633539
+      Hex_v01_nogrid_42: -1259620424606944548
+      Hex_v01_nogrid_43: 2846027720652130072
+      Hex_v01_nogrid_44: 8846347569183975083
+      Hex_v01_nogrid_45: 5760735589761739951
+      Hex_v01_nogrid_46: -3320390104328785043
+      Hex_v01_nogrid_47: 4698388792751821779
+      Hex_v01_nogrid_48: -3379587631450109408
+      Hex_v01_nogrid_49: 1712220746515530052
+      Hex_v01_nogrid_5: -3232499213424706943
+      Hex_v01_nogrid_50: -7786940400445250128
+      Hex_v01_nogrid_51: -3621079982358768801
+      Hex_v01_nogrid_52: -4760944853794594840
+      Hex_v01_nogrid_53: -7925430952969932410
+      Hex_v01_nogrid_54: -3685756704726517142
+      Hex_v01_nogrid_55: -4660306132126440215
+      Hex_v01_nogrid_56: 7683173010766193466
+      Hex_v01_nogrid_57: -2152404483021540465
+      Hex_v01_nogrid_58: 3666166756270855693
+      Hex_v01_nogrid_59: 4510341560560963725
+      Hex_v01_nogrid_6: 1491356991532869931
+      Hex_v01_nogrid_60: -6218528698951079176
+      Hex_v01_nogrid_61: 1568243913952370335
+      Hex_v01_nogrid_62: -2454992990191246958
+      Hex_v01_nogrid_63: -6507626045551913597
+      Hex_v01_nogrid_64: -5165643737878556836
+      Hex_v01_nogrid_65: 2680280855724689668
+      Hex_v01_nogrid_66: 934067703509467098
+      Hex_v01_nogrid_67: -597823991071252133
+      Hex_v01_nogrid_68: -851102502118015534
+      Hex_v01_nogrid_69: 4383550926132933419
+      Hex_v01_nogrid_7: 4342807716507042106
+      Hex_v01_nogrid_70: 6921227172613084226
+      Hex_v01_nogrid_71: 3848235350976247639
+      Hex_v01_nogrid_72: -6879147774432632398
+      Hex_v01_nogrid_73: 351864878555044308
+      Hex_v01_nogrid_74: 2329379387914651992
+      Hex_v01_nogrid_75: 1385486565689027480
+      Hex_v01_nogrid_76: -5786696186136413381
+      Hex_v01_nogrid_77: -1123145631910204364
+      Hex_v01_nogrid_78: -336736424514102914
+      Hex_v01_nogrid_79: 3804321425701306228
+      Hex_v01_nogrid_8: -4836617174050841925
+      Hex_v01_nogrid_80: 4607927389793583376
+      Hex_v01_nogrid_81: -5644323899338290249
+      Hex_v01_nogrid_82: 3372803670768084533
+      Hex_v01_nogrid_83: 5659568016617078939
+      Hex_v01_nogrid_84: 7407210351249928389
+      Hex_v01_nogrid_85: 6501597224086152418
+      Hex_v01_nogrid_86: 8830007206297577774
+      Hex_v01_nogrid_87: -8110403801294453538
+      Hex_v01_nogrid_88: 3224358342859044924
+      Hex_v01_nogrid_89: -7814102240136134823
+      Hex_v01_nogrid_9: -8678960922735252938
+      Hex_v01_nogrid_90: 5013686635352296165
+      Hex_v01_nogrid_91: 4318401646628661106
+      Hex_v01_nogrid_92: -3892795583961995631
+      Hex_v01_nogrid_93: -2208249280461316991
+      Hex_v01_nogrid_94: -6139413829355145523
+      Hex_v01_nogrid_95: -8120146927782504886
+      Hex_v01_nogrid_96: 5942202190591302160
+      Hex_v01_nogrid_97: -6147590299448581284
+      Hex_v01_nogrid_98: -8308177883932435675
+      Hex_v01_nogrid_99: -1204369198424899380
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

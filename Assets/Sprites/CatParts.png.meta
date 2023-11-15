@@ -66,7 +66,7 @@ TextureImporter:
       213: -2987944006305558840
     second: CatParts_20
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -83,9 +83,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -94,9 +97,9 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
-    aniso: -1
-    mipBias: -100
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -117,9 +120,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -131,6 +140,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -143,6 +153,33 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -593,160 +630,284 @@ TextureImporter:
     physicsShape: []
     bones:
     - name: root
+      guid: 
       position: {x: 677.1575, y: 538.62006, z: 0}
       rotation: {x: 0, y: 0, z: 0.0026009858, w: 0.9999966}
       length: 155.51024
       parentId: -1
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: spine_1
+      guid: 
       position: {x: 155.51025, y: -0.000012253133, z: 0}
       rotation: {x: 0, y: 0, z: -0.0025952507, w: 0.99999666}
       length: 147.40839
       parentId: 0
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: spine_2
+      guid: 
       position: {x: 147.4084, y: -0.000010841054, z: 0}
       rotation: {x: 0, y: 0, z: 0.07510668, w: 0.9971755}
       length: 135.16374
       parentId: 1
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: spine_3
+      guid: 
       position: {x: 135.16362, y: -0.00005348087, z: 0}
       rotation: {x: 0, y: 0, z: 0.11327119, w: 0.9935641}
       length: 96.70886
       parentId: 2
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: neck
+      guid: 
       position: {x: 152.61679, y: 13.559513, z: 0}
       rotation: {x: 0, y: 0, z: 0.11971706, w: 0.99280804}
       length: 99.33203
       parentId: 3
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: head
+      guid: 
       position: {x: 269.55225, y: -195.35547, z: 0}
       rotation: {x: 0, y: 0, z: -0.64390934, w: 0.7651018}
       length: 158.64212
       parentId: 4
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: front_ear
+      guid: 
       position: {x: -196.34183, y: 27.626633, z: 0}
       rotation: {x: 0, y: -0, z: 0.8682881, w: 0.49606034}
       length: 95.27328
       parentId: 5
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: back_ear
+      guid: 
       position: {x: -39.796135, y: 81.46943, z: 0}
       rotation: {x: 0, y: -0, z: 0.75285226, w: 0.65818954}
       length: 37.581257
       parentId: 5
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: whiskers_front_1
+      guid: 
       position: {x: -41.49567, y: -72.01216, z: 0}
       rotation: {x: 0, y: -0, z: -0.74715954, w: 0.6646447}
       length: 50.723194
       parentId: 5
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: whiskers_front_2
+      guid: 
       position: {x: 50.723225, y: 0.000029260787, z: 0}
       rotation: {x: 0, y: 0, z: 0.21574132, w: 0.97645056}
       length: 59.765354
       parentId: 8
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: whiskers_back
+      guid: 
       position: {x: 98.95219, y: 123.34946, z: 0}
       rotation: {x: 0, y: -0, z: 0.73171586, w: 0.6816098}
       length: 38.478245
       parentId: 5
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: front_foward_upper_leg
+      guid: 
       position: {x: -42.28595, y: -137.44884, z: 0}
       rotation: {x: 0, y: -0, z: -0.8512253, w: 0.5248004}
       length: 165.06223
       parentId: 3
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: front_foward_lower_leg
+      guid: 
       position: {x: 184.78244, y: -2.3169153, z: 0}
       rotation: {x: 0, y: 0, z: 0.27363667, w: 0.9618332}
       length: 160.46146
       parentId: 11
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: front_forward_paw
+      guid: 
       position: {x: 216.21213, y: -13.527795, z: 0}
       rotation: {x: 0, y: 0, z: 0.5247705, w: 0.85124373}
       length: 62.365105
       parentId: 12
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: back_forward_upper_leg
+      guid: 
       position: {x: -178.07701, y: -106.74809, z: 0}
       rotation: {x: 0, y: -0, z: -0.8472784, w: 0.53114915}
       length: 170.2632
       parentId: 3
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: back_forward_lower_leg
+      guid: 
       position: {x: 182.53278, y: -10.586739, z: 0}
       rotation: {x: 0, y: 0, z: 0.26961407, w: 0.96296847}
       length: 157.93958
       parentId: 14
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: back_forward_paw
+      guid: 
       position: {x: 214.21408, y: -11.2136345, z: 0}
       rotation: {x: 0, y: 0, z: 0.50767976, w: 0.86154586}
       length: 62.53911
       parentId: 15
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: back_backward_upper_leg
+      guid: 
       position: {x: -68.42221, y: -118.44329, z: 0}
       rotation: {x: 0, y: -0, z: -0.8468312, w: 0.5318617}
       length: 213.41437
       parentId: 0
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: back_backward_lower_leg
+      guid: 
       position: {x: 233.74437, y: -8.787015, z: 0}
       rotation: {x: 0, y: 0, z: 0.41394162, w: 0.9103034}
       length: 146.50072
       parentId: 17
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: back_backward_paw
+      guid: 
       position: {x: 190.94649, y: -2.259335, z: 0}
       rotation: {x: 0, y: 0, z: 0.5329711, w: 0.8461335}
       length: 56.29254
       parentId: 18
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: front_backward_upper_leg
+      guid: 
       position: {x: -272.47586, y: -93.421425, z: 0}
       rotation: {x: 0, y: -0, z: -0.84852225, w: 0.5291597}
       length: 210.59648
       parentId: 0
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: front_backward_lower_leg
+      guid: 
       position: {x: 229.26097, y: 2.0819519, z: 0}
       rotation: {x: 0, y: 0, z: 0.4113515, w: 0.9114768}
       length: 148.00778
       parentId: 20
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: front_backward_paw
+      guid: 
       position: {x: 188.2322, y: -1.0704932, z: 0}
       rotation: {x: 0, y: 0, z: 0.53806424, w: 0.84290385}
       length: 56.2925
       parentId: 21
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: tail_1
+      guid: 
       position: {x: -136.30363, y: 49.632244, z: 0}
       rotation: {x: 0, y: -0, z: -0.99987876, w: 0.015573424}
       length: 57.333515
       parentId: 0
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: tail_2
+      guid: 
       position: {x: 57.333546, y: -0.00009587597, z: 0}
       rotation: {x: 0, y: 0, z: 0.030058559, w: 0.99954814}
       length: 64.88975
       parentId: 23
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: tail_3
+      guid: 
       position: {x: 64.88975, y: -0.000063723084, z: 0}
       rotation: {x: 0, y: 0, z: -0.03157353, w: 0.99950147}
       length: 62.538982
       parentId: 24
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: tail_4
+      guid: 
       position: {x: 62.538982, y: 0.000016115508, z: 0}
       rotation: {x: 0, y: 0, z: 0.014165417, w: 0.9998997}
       length: 84.54156
       parentId: 25
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: tail_5
+      guid: 
       position: {x: 84.54156, y: 0.00016073142, z: 0}
       rotation: {x: 0, y: 0, z: -0.01674545, w: 0.9998598}
       length: 73.992874
       parentId: 26
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: tail_6
+      guid: 
       position: {x: 73.99287, y: 0.00007834109, z: 0}
       rotation: {x: 0, y: 0, z: 0.014463143, w: 0.9998954}
       length: 73.0408
       parentId: 27
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: tail_7
+      guid: 
       position: {x: 73.0408, y: -0.00024723433, z: 0}
       rotation: {x: 0, y: 0, z: -0.014460052, w: 0.99989545}
       length: 73.9929
       parentId: 28
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: tail_8
+      guid: 
       position: {x: 73.9929, y: -0.000014660164, z: 0}
       rotation: {x: 0, y: 0, z: 0.006736558, w: 0.99997735}
       length: 50.0469
       parentId: 29
+      color:
+        serializedVersion: 2
+        rgba: 0
     spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices:
@@ -4077,9 +4238,30 @@ TextureImporter:
       boneIndex[2]: 0
       boneIndex[3]: 0
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      CatParts_0: -7885498198663208050
+      CatParts_1: 4574694774388092338
+      CatParts_10: -1610601949770726285
+      CatParts_11: -7443062850628177523
+      CatParts_12: -7615120570937733844
+      CatParts_13: 5611379533829074823
+      CatParts_14: 5060535125149392332
+      CatParts_15: -8062906823503313336
+      CatParts_16: -2397284968097443257
+      CatParts_17: 2917260387222104316
+      CatParts_18: 4111197968051102867
+      CatParts_19: -525202389481777940
+      CatParts_2: -8808333115403491782
+      CatParts_20: -2987944006305558840
+      CatParts_3: 5857872140696806072
+      CatParts_4: -4475635811251800300
+      CatParts_5: -5696754900283278680
+      CatParts_6: 3847801416877192299
+      CatParts_7: 8009184683770849757
+      CatParts_8: -7646599786362289089
+      CatParts_9: -5970099411917100218
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

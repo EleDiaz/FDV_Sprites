@@ -408,7 +408,7 @@ TextureImporter:
       213: -3005012195380599332
     second: terrain_0_134
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -425,9 +425,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -436,9 +439,9 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
-    aniso: -1
-    mipBias: -100
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -459,9 +462,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -473,6 +482,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -485,6 +495,33 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -3421,9 +3458,144 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      terrain_0_0: 8067707683129455232
+      terrain_0_1: 3241234623633220986
+      terrain_0_10: -220686458596296547
+      terrain_0_100: -693756088030250503
+      terrain_0_101: -5343957266475607872
+      terrain_0_102: -5235140587493936031
+      terrain_0_103: -1940016384493999650
+      terrain_0_104: 5261886249536165131
+      terrain_0_105: -3072696165396269397
+      terrain_0_106: -3138271319596778249
+      terrain_0_107: 8998982045891355643
+      terrain_0_108: -7335423857790590604
+      terrain_0_109: 2747518448417767238
+      terrain_0_11: -2377424781132472863
+      terrain_0_110: -2213996671790145816
+      terrain_0_111: 6814130462996243299
+      terrain_0_112: -2526387013616720342
+      terrain_0_113: -1938531259248462646
+      terrain_0_114: 4283900687820819587
+      terrain_0_115: -7686749734452567319
+      terrain_0_116: 4515586465010180020
+      terrain_0_117: -7553873567527319707
+      terrain_0_118: 6007604719921785669
+      terrain_0_119: -5465065239096662205
+      terrain_0_12: 7143356471916755992
+      terrain_0_120: 1433412527735746739
+      terrain_0_121: -50280811182724164
+      terrain_0_122: 3280915221325484666
+      terrain_0_123: 2143626309115046292
+      terrain_0_124: 765893819253839982
+      terrain_0_125: -550370153296053489
+      terrain_0_126: 8624409735539235279
+      terrain_0_127: -23288811793732708
+      terrain_0_128: 7628121101323204032
+      terrain_0_129: -8691974953220037265
+      terrain_0_13: 2137562633426961599
+      terrain_0_130: 3189031902896306339
+      terrain_0_131: -5426787835564905235
+      terrain_0_132: -3233321868598806074
+      terrain_0_133: 5102041151171977843
+      terrain_0_134: -3005012195380599332
+      terrain_0_14: -3415035302814910325
+      terrain_0_15: 8051589451417922597
+      terrain_0_16: -6266466694306113586
+      terrain_0_17: -4952793414500035030
+      terrain_0_18: 6727751646557889013
+      terrain_0_19: -3198909328578708321
+      terrain_0_2: 1337363768723315134
+      terrain_0_20: -8774318537125302961
+      terrain_0_21: -4609753540099116634
+      terrain_0_22: -8309786471890420040
+      terrain_0_23: -2369909000458919937
+      terrain_0_24: -7630082600720167595
+      terrain_0_25: -3954379920506473670
+      terrain_0_26: -2656765283323098876
+      terrain_0_27: -3140053299713781805
+      terrain_0_28: -537378036378845635
+      terrain_0_29: 8358421360615299832
+      terrain_0_3: -7786800279616234902
+      terrain_0_30: -8887524901927179491
+      terrain_0_31: -410646645578657973
+      terrain_0_32: -972290184705722865
+      terrain_0_33: 2241298850442825199
+      terrain_0_34: 4133826507066834031
+      terrain_0_35: 6644930076415815242
+      terrain_0_36: 8201617698619898590
+      terrain_0_37: -6457816379370436739
+      terrain_0_38: 1761612863951746884
+      terrain_0_39: -977069826770401318
+      terrain_0_4: -6883933700811317388
+      terrain_0_40: -4367820343213141921
+      terrain_0_41: -7119045957941467965
+      terrain_0_42: -8316855141445880004
+      terrain_0_43: -2645022190745828140
+      terrain_0_44: -4523777565901296000
+      terrain_0_45: 3036466701530227915
+      terrain_0_46: -7609016770960624429
+      terrain_0_47: -2082759797662095977
+      terrain_0_48: -5217449259043920785
+      terrain_0_49: 3693260806603499805
+      terrain_0_5: 8302300096139854557
+      terrain_0_50: -5143063458361232375
+      terrain_0_51: -7517489784364315922
+      terrain_0_52: -404445395898492260
+      terrain_0_53: -7201910573082417297
+      terrain_0_54: 6111483773669012159
+      terrain_0_55: -5620276053425709679
+      terrain_0_56: 9117013204565015556
+      terrain_0_57: 9064254197147509559
+      terrain_0_58: 1654120240436398543
+      terrain_0_59: -8433710025395766314
+      terrain_0_6: -4732485355074165232
+      terrain_0_60: 6341125260659040309
+      terrain_0_61: 5745809347965266271
+      terrain_0_62: 7523784641147639309
+      terrain_0_63: -2081252557819390475
+      terrain_0_64: 8634689485726872422
+      terrain_0_65: -8726182788775383911
+      terrain_0_66: -9174046161407036013
+      terrain_0_67: 9135286872278063605
+      terrain_0_68: 6185715738047703280
+      terrain_0_69: 4893978367777987560
+      terrain_0_7: 9171196380061125221
+      terrain_0_70: -3899461274432859390
+      terrain_0_71: -6084456014216549235
+      terrain_0_72: 988056854789541204
+      terrain_0_73: -3033104998965678687
+      terrain_0_74: -8149621164119285760
+      terrain_0_75: 3264230771010373947
+      terrain_0_76: -4926852839413951472
+      terrain_0_77: -3654638071145045947
+      terrain_0_78: -1737110197454353290
+      terrain_0_79: -4717477422373688757
+      terrain_0_8: 1658142986849090743
+      terrain_0_80: 6531390688631536708
+      terrain_0_81: 499876374967812740
+      terrain_0_82: 2806053891671577706
+      terrain_0_83: 3591089295896272667
+      terrain_0_84: 6564687539102144319
+      terrain_0_85: -8552378777636175067
+      terrain_0_86: 4679006534745208442
+      terrain_0_87: 8371237030173477666
+      terrain_0_88: -5984155078929385285
+      terrain_0_89: 6787784186557974287
+      terrain_0_9: -33496208418418879
+      terrain_0_90: -5170001223813106717
+      terrain_0_91: 9051073467723300979
+      terrain_0_92: 8752457562759259247
+      terrain_0_93: 7832720781609068767
+      terrain_0_94: -2140974046517730100
+      terrain_0_95: 246099197806841623
+      terrain_0_96: 2672361445933805242
+      terrain_0_97: 6763153929790457391
+      terrain_0_98: 1618043285562171626
+      terrain_0_99: 4244406384039111132
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
